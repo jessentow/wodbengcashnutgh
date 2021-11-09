@@ -1,0 +1,40 @@
+#sticky-header{
+    /* max-height: 1.7vh; */
+    margin-bottom: 1px;
+    padding-top: 0;
+    /* color: black; */
+
+}
+.header_bottom_border .white_border{
+    top: -4px;
+}
+nav ul#navigation li a {
+    color: green;
+    font-weight: bold;
+}
+.mobile_menu{
+    /* background-color: red; */
+    color: green;
+    top: -24px;
+
+}
+.slicknav_btn{
+    background-color: green;
+    position: absolute;
+    top: -24px;
+}
+/* .slicknav_icon_bar{ */
+    #sticky-header > div > div > div > div.col-12 > div > div > a > span.slicknav_icon {
+    color: green;
+    background-color: green;
+
+}
+#sticky-header {
+height :9.7vh;
+}
+
+@media (max-width: 767px) {
+    #sticky-header{
+        height: 11.6vh;
+    }
+}

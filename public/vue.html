@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <div id="app">
+        <!-- <h2> {{ product }} </h2> -->
+
+        <ul>
+            <li v-for="product in products">
+                <input type="number" v-model.number="product.price">
+                {{ product.name }}  
+                 <!-- {{   product.price }} -->
+
+                <span v-if="product.price > 20"> Expensive </span>
+                <button @click="product.price += 1" > Add price </button>
+            </li>
+        </ul>
+        <h2> Total Inventory: {{ totalProducts }} </h2>
+    </div>
+
+
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script src="https://unpkg.com/vue"></script>
+
+    <script>
+
+        // const app = new Vue({
+        //     el: '#app',
+        //     data: {
+        //         products : [
+        //             'boots',
+        //             'jackets',
+        //             'cookies'
+        //         ]
+        //     }    
+        // })
+
+        const app = new Vue({
+            
+            el: '#app',
+            data : {
+                products: []
+            },
+            computed: {
+                totalProducts () {
+                    return this.products.reduce(( sum, product ) => {
+                        return sum + product.price
+                    }, 0 )
+                }
+            },
+            created (){
+                fetch('https://codjosft-rest-api.herokuapp.com/api/products')
+                .then(response => response.json())
+                .then(json => {
+                    this.products = json
+                })
+            }
+            
+                
+        });
+        
+        //  const app = Vue.createApp({})
+
+//         Vue.createApp({
+//         render() {
+//          return Vue.h('div', {}, this.hi)
+//          }
+// })
+
+        // mount
+    
+    </script>
+
+</body>
+</html>

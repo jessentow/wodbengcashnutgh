@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+       <!-- CSS here -->
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+       <link rel="stylesheet" href="css/owl.carousel.min.css">
+       <link rel="stylesheet" href="css/magnific-popup.css">
+       <link rel="stylesheet" href="css/font-awesome.min.css">
+       <link rel="stylesheet" href="css/themify-icons.css">
+       <link rel="stylesheet" href="css/nice-select.css">
+       <link rel="stylesheet" href="css/flaticon.css">
+       <link rel="stylesheet" href="css/gijgo.css">
+       <link rel="stylesheet" href="css/animate.css">
+       <link rel="stylesheet" href="css/slicknav.css">
+       <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+        <!-- <div class="container"> -->
+            <div class="gallery">
+                <div class="img-container">
+                      <img src="./img/blog/blog_1.png" alt="about1" srcset="" data-original="single_blog_1.png">
+                </div>
+
+                <div class="img-container">
+                    <img src="./img/blog/blog_2.png" alt="about2" srcset="" data-original="single_blog_2.png">
+              </div>
+
+              <div class="img-container">
+                <img src="./img/blog/blog_3.png" alt="about3" srcset="" data-original="single_blog_3.png">
+          </div>
+          <div class="img-container">
+            <img src="./img/blog/blog_4.png" alt="about3" srcset="" data-original="single_blog_4.png">
+      </div>
+    </div>
+
+ <div class="modal">
+    <img  src="" alt="" srcset="" class="full-img">
+                <p class="caption">ddddddddddd</p>
+     </div>
+
+
+        <!-- </div> -->
+
+      
+
+       <!-- JS here -->
+       <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+       <script src="js/vendor/jquery-1.12.4.min.js"></script>
+       <script src="js/popper.min.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+       <script src="js/owl.carousel.min.js"></script>
+       <script src="js/isotope.pkgd.min.js"></script>
+       <script src="js/ajax-form.js"></script>
+       <script src="js/waypoints.min.js"></script>
+       <script src="js/jquery.counterup.min.js"></script>
+       <script src="js/imagesloaded.pkgd.min.js"></script>
+       <script src="js/scrollIt.js"></script>
+       <script src="js/jquery.scrollUp.min.js"></script>
+       <script src="js/wow.min.js"></script>
+       <script src="js/nice-select.min.js"></script>
+       <script src="js/jquery.slicknav.min.js"></script>
+       <script src="js/jquery.magnific-popup.min.js"></script>
+       <script src="js/plugins.js"></script>
+       <script src="js/gijgo.min.js"></script>
+   
+       <!--contact js-->
+       <script src="js/contact.js"></script>
+       <script src="js/jquery.ajaxchimp.min.js"></script>
+       <script src="js/jquery.form.js"></script>
+       <script src="js/jquery.validate.min.js"></script>
+       <script src="js/mail-script.js"></script>
+   
+       <script src="js/main.js"></script>
+
+       <style>
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            min-height: 100vh;
+            grid-gap: 2rem;
+
+        }
+        .img-container {
+            overflow: hidden;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease-out;
+            cursor: pointer;
+        }
+        .img-container img:hover{
+            transform: scale(1.2);
+        }
+
+        .modal{
+            background: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .modal p {
+            color: white;  
+            font-size: 2rem;
+            position: absolute;
+            bottom: 5%;
+            left: 50%;    
+        }
+    </style>
+</body>
+</html> 
